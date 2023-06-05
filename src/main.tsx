@@ -11,6 +11,7 @@ import {
   chainConst,
   relayerUrlConst,
 } from "./consts/parameters";
+import ALIGuideFooter from "./components/guide/ALIGuideFooter.jsx";
 
 
 const container = document.getElementById("root");
@@ -36,6 +37,7 @@ root.render(
     <ThirdwebProvider activeChain={chain} sdkOptions={sdkOptions}>
       <Toaster />
       <App />
+      <ALIGuideFooter/>
     </ThirdwebProvider>
   </React.StrictMode>,
 );
